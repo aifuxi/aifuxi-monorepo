@@ -2,26 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+[data-theme='light'] {
+  --rgbBackground: 242 242 242;
+  --rgbBackgroundLight: 255 255 255;
+  --rgbPrimary: 0 0 0;
+  --rgbAccent: 0 229 255;
+  --rgbText: 0 0 0;
+  --rgbError: 255 0 60;
+  --colorTextTitle: rgb(var(--rgbText) / 1);
+  --colorTextBody: rgb(var(--rgbText) / 0.8);
+  --colorTextLight: rgb(var(--rgbText) / 0.6);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --colorPrimary: rgba(0, 153, 255, 1);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(var(--rgbBackground));
+  color: var(--colorTextBody);
+  width: 100vw;
+  height: 100vh;
 }
