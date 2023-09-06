@@ -19,6 +19,4 @@
 body {
   background-color: rgb(var(--rgbBackground));
   color: var(--colorTextBody);
-  width: 100vw;
-  height: 100vh;
 }
