@@ -38,5 +38,9 @@
   "engines": {
     "node": ">=16.17.0",
     "pnpm": ">=7.x"
+  },
+  "dependencies": {
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^1.14.0"
   }
 }

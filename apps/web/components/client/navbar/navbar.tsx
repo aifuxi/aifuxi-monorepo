@@ -5,6 +5,7 @@ import React from "react";
 import { IconBilibili, IconGithub } from "../icons";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { cn } from "@aifuxi.cool/utils";
 
 const baseNavItems: NavItem[] = [
   {
@@ -32,14 +33,15 @@ export const Navbar = () => {
     <div className="fixed top-12 left-12 bottom-12 w-16 flex flex-col items-center">
       <div className="w-12 h-12 bg-black/10"></div>
 
-      <div className="mt-12" style={{ writingMode: "sideways-rl" }}>
+      <div className="mt-12">
         {baseNavItems.map((item) => (
           <Link
             key={item.link}
             href={item.link}
-            className={
-              "flex justify-center items-center text-center h-[100px] p-4 font-semibold"
-            }
+            className={cn(
+              "flex justify-center items-center text-center h-[100px] p-4 font-semibold",
+              pathname === item.link && "bg-black/5 cyberpunk-clip",
+            )}
           >
             {item.label}
           </Link>

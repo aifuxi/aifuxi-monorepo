@@ -1,5 +1,6 @@
-import type { Config } from "tailwindcss";
-const colors = require("tailwindcss/colors");
+import { type Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   darkMode: ["class", '[data-theme="dark"]'],
@@ -25,6 +26,15 @@ const config: Config = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        ".cyberpunk-clip": {
+          clipPath:
+            "polygon(0 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%)",
+        },
+      });
+    }),
+  ],
 };
 export default config;
