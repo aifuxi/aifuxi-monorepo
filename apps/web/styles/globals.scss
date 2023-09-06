@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './scrollbar.scss';
+
 [data-theme='light'] {
   --rgbBackground: 242 242 242;
   --rgbBackgroundLight: 255 255 255;
