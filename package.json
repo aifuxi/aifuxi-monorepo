@@ -2,7 +2,8 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "commit": "cz",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "dev:web": "pnpm -F @aifuxi.cool/web run dev"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
