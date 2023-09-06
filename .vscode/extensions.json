@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker",
+    "dsznajder.es7-react-js-snippets",
+    "dbaeumer.vscode-eslint",
+    "christian-kohler.npm-intellisense",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "meganrogge.template-string-converter"
+  ]
+}
