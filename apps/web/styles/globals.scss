@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import './scrollbar.scss';
+@import './poppins-font.scss';
 
 [data-theme='light'] {
   --rgbBackground: 242 242 242;
