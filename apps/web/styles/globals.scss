@@ -4,6 +4,8 @@
 
 @import './scrollbar.scss';
 @import './poppins-font.scss';
+@import 'highlight.js/styles/atom-one-light.css';
+@import './bytemd.scss';
 
 [data-theme='light'] {
   --rgbBackground: 242 242 242;

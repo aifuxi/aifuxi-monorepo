@@ -6,6 +6,13 @@
     "dev:web": "pnpm --filter @aifuxi.cool/web run dev"
   },
   "devDependencies": {
+    "@bytemd/plugin-breaks": "^1.21.0",
+    "@bytemd/plugin-frontmatter": "^1.21.0",
+    "@bytemd/plugin-gemoji": "^1.21.0",
+    "@bytemd/plugin-gfm": "^1.21.0",
+    "@bytemd/plugin-highlight-ssr": "^1.21.0",
+    "@bytemd/plugin-medium-zoom": "^1.21.0",
+    "@bytemd/react": "^1.21.0",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
@@ -15,6 +22,7 @@
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "autoprefixer": "10.4.15",
+    "bytemd": "^1.21.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.48.0",
@@ -24,6 +32,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "highlight.js": "^11.8.0",
     "husky": "^8.0.3",
     "postcss": "8.4.29",
     "prettier": "^3.0.3",
@@ -42,6 +51,7 @@
   },
   "dependencies": {
     "clsx": "^2.0.0",
+    "github-markdown-css": "^5.2.0",
     "tailwind-merge": "^1.14.0"
   }
 }

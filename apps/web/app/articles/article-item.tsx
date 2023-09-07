@@ -7,7 +7,7 @@ import React from "react";
 export const ArticleItem = () => {
   return (
     <Link
-      href="#"
+      href="/articles/test-friendly-url"
       className="grid gap-6 py-16 px-8 border-b relative group/wrapper"
     >
       <div className="absolute inset-x-0 w-0 inset-8 bg-white z-[-1] group-hover/wrapper:w-full transition-all"></div>
